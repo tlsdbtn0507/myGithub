@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Exchange_Rate</title>
-    <script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>환율Check!</h1>
-    <form action="Exchange_Rate">
-        <label for="won">원화</label><input type="text" placeholder="won">
-        은(는) 현재
-        <label for="$">Dollar:</label><input type="text" placeholder="$">
-        입니다
-        <button id="conver">전환</button>
-    </form>
-<script src="convertbtn.js"></script>
+</div>
+
+<label for="won">원화</label><input type="text" placeholder="won">
+
+<label for="$">Dollar:</label><input type="text" placeholder="$">
+
+<button onclick = "pop('block')">환전</button>
+
+<div class="exchange-box" id="exchange">
+    <p>llalalala</p>
+    <button onclick="pop('none')">닫기</button>
+
+<script>
+        function pop(money){
+            document.getElementById('exchange').style.display=money;
+        }
+</script>
 </body>
 </html>
